@@ -1,0 +1,111 @@
+.projects {
+    background: #68A153;
+    &__container {
+        padding-top: 53px;
+        padding-bottom: 63px;
+    }
+    &__wrap {
+        padding: 35px 50px;
+    }
+    &__title {
+        margin-bottom: 58px;
+    }
+    &__descr {
+        text-align: center;
+    }
+    &__img {
+        margin-bottom: 22px;
+    }
+    &__title-mobile {
+        display: none;
+    }
+    &__swiper_mini {
+        display: none;
+        overflow: hidden;
+        .swiper-slide-thumb-active {
+            display: none;
+        }
+    }
+    &__swiper-top {
+        position: relative;
+        .swiper-button-prev svg {
+            transform: rotate(180deg)
+        }
+        .swiper-button-prev {
+            left: -20px;
+            color: #FFFFFF80;
+        }
+        .swiper-button-next {
+            right: -20px;
+            color: #FFFFFF80;
+        }
+    }
+    &__swiper {
+        overflow: hidden;
+        .swiper-wrapper {
+            padding: 50px 0 70px 0;
+        }
+        .swiper-slide {
+            display: flex;
+            flex-direction: column-reverse;
+            justify-content: center;
+            transition: transform $short;
+        }
+        .swiper-slide:not(.swiper-slide-active) {
+            transform: scale(.8)
+        }
+        .swiper-slide-active {
+            transform: scale(1.1);
+        }
+    }
+}
+
+@media(max-width: 768px) {
+    .projects {
+        &__container {
+            padding-bottom: 24px;
+            padding-top: 15px;
+        }
+        &__wrap {
+            padding: 10px 35px 20px
+        }
+        &__title-desktop {
+            display: none;
+        }
+        &__title-mobile {
+            display: block;
+            margin-bottom: 9px;
+        }
+        &__descr {
+            font-size: 18px;
+        }
+        &__swiper_mini {
+            display: block;
+        }
+        &__swiper-top {
+            .swiper-button-prev {
+                left: -30px;
+            }
+            .swiper-button-next {
+                right: -30px;
+            }
+        }
+        &__swiper {
+            .swiper-slide {
+                flex-direction: column;
+            }
+            .swiper-slide-active {
+                transform: none
+            }
+            .swiper-wrapper {
+                padding: 0 0 20px 0;
+            }
+        }
+        &__descr {
+            margin-bottom: 20px;
+        }
+        &__img {
+            margin-bottom: 0;
+        }
+    }
+}

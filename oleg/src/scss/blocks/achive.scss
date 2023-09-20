@@ -1,0 +1,126 @@
+.achive {
+    background: $bg;
+    &__container {
+        padding-top: 82px;
+        padding-bottom: 105px;
+    }
+    &__wrap {
+        padding: 5px 30px 50px 30px;
+    }
+    &__content {
+        display: flex;
+    }
+    &__title {
+        margin-bottom: 60px;
+    }
+    &__title-mobile {
+        display: none;
+    }
+    &-swiper {
+        &__img {
+            width: 100%;
+        }
+    }
+    .top-swiper {
+        position: relative;
+        margin-bottom: 20px;
+    }
+    .swiper-slide-thumb-active {
+        display: none;
+    }
+    .achive-swiper_mini .swiper-wrapper {
+        justify-content: center;
+    }
+    .swiper-container {
+        overflow: hidden;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: #FFFFFF80;
+        &:focus-visible {
+            outline: none;
+        }
+    }
+    .swiper-button-prev {
+        left: -35px
+    }
+    .swiper-button-prev svg {
+        transform: rotate(180deg)
+    }
+    .swiper-button-next {
+        right: -35px
+    }
+    &__content_mobile {
+        display: none;
+    }
+}
+
+.prev {
+    max-width: 164px;
+    margin-right: 20px;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: 42px;
+        }
+    }
+    &__text {
+        margin-bottom: 10px;
+    }
+    &__img {
+        max-width: 110px;
+    }
+}
+
+.full {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: baseline;
+        overflow: hidden;
+    }
+    &__text {
+        min-height: 200px;
+        font-size: 2vw;
+        margin-bottom: 58px;
+        text-align: center;
+    }
+    &__img {
+        object-fit: cover;
+        margin-top: auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .achive {
+        &__container {
+            padding-top: 15px;
+            padding-bottom: 27px;
+        }
+        &__content {
+            display: none;
+        }
+        &__content_mobile {
+            display: block;
+        }
+        &__title {
+            margin-bottom: 9px;
+            font-size: 28px;
+        }
+        &__title-desktop {
+            display: none;
+        }
+        &__title-mobile {
+            display: block
+        }
+        &__wrap {
+            padding: 48px 38px;
+        }
+    }
+}

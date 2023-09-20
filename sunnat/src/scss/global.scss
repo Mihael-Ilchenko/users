@@ -1,0 +1,155 @@
+ html {
+     box-sizing: border-box;
+     font-size: 16px;
+ }
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+ }
+
+ body {
+     font-family: $main_ff, sans-serif;
+     min-width: 320px;
+     font-size: $main_fz;
+     margin: 0;
+     color: $white;
+     position: relative;
+ }
+
+ .container {
+     margin: 0 auto;
+     padding: 0 60px;
+ }
+
+ img {
+     display: block;
+     max-width: 100%;
+ }
+
+ .section-wrap {
+     border: 4px solid $gray;
+     border-radius: 40px;
+ }
+
+ .section-title {
+     font-size: 45px;
+     text-align: center;
+ }
+
+ .section-bg {
+     background: url('../img/spots/blue_spot.png') no-repeat left bottom /cover, url('../img/spots/pink_spot.png') no-repeat 0 100% /cover;
+ }
+
+ .pre-space {
+     word-spacing: 30000px;
+ }
+
+ .title-decor {
+     position: relative;
+     &::after {
+         content: '';
+         position: absolute;
+         top: calc(100% + 7px);
+         left: 50%;
+         transform: translateX(-50%);
+         width: 217px;
+         height: 15px;
+         background-image: url('../img/title_decor.svg');
+     }
+ }
+
+ .link-reset {
+     text-decoration: none;
+     color: inherit;
+ }
+
+ .link-reset:focus {
+     outline: none;
+ }
+
+ .list-reset {
+     margin: 0;
+     padding: 0;
+     list-style: none;
+ }
+
+ .input-reset {
+     border: none;
+     padding: 0;
+     max-width: 100%;
+     background: transparent;
+     color: inherit;
+     &::placeholder {
+         color: inherit;
+     }
+ }
+
+ .input-reset:focus {
+     outline: none;
+ }
+
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6,
+ p {
+     margin: 0;
+ }
+
+ .btn-reset {
+     padding: 0;
+     background-color: transparent;
+     border: none;
+     cursor: pointer;
+     font: inherit;
+     color: inherit;
+ }
+
+ .anim-color {
+     transition: color $short;
+     &:focus-visible,
+     &:hover,
+     &:focus {
+         color: $manhattan;
+     }
+ }
+
+ .sect-svg {
+     position: absolute;
+     height: 100%;
+     pointer-events: none;
+ }
+
+ .swiper-button-next::after,
+ .swiper-button-prev::after {
+     display: none;
+ }
+
+ @media(max-width: 1024px) {
+     .container {
+         padding: 0 30px;
+     }
+ }
+
+ @media(max-width: 768px) {
+     .container {
+         padding: 0 15px;
+     }
+     .section-title {
+         font-size: 30px;
+         text-align: center;
+     }
+     .section-wrap {
+         border-width: 2px;
+         border-radius: 20px;
+     }
+     .title-decor {
+         &::after {
+             display: none;
+         }
+     }
+ }

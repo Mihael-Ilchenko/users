@@ -1,0 +1,23 @@
+ @font-face {
+     font-family: "Play";
+     src: local("Play"), url("../fonts/Play.ttf") format("ttf");
+     font-weight: 400;
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: "Play";
+     src: local("Play-Bold"), url("../fonts/Play-Bold.ttf") format("ttf");
+     font-weight: 700;
+     font-style: normal;
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: "Timer New Roman";
+     src: local("Timer-New-Roman"), url("../fonts/TimesNewRomanPSMT.ttf") format("ttf");
+     font-weight: 400;
+     font-style: normal;
+     font-display: swap;
+ }

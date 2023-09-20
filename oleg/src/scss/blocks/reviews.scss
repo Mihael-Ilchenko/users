@@ -1,0 +1,108 @@
+.reviews {
+    background: $bg;
+    position: relative;
+    &__container {
+        padding-top: 53px;
+        padding-bottom: 75px;
+    }
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 31px 35px;
+        position: relative;
+        >*:not(:last-child) {
+            margin-right: 40px;
+        }
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            right: 34px;
+            left: 34px;
+            height: 100%;
+            max-height: 230px;
+            z-index: 10;
+            background: linear-gradient(178.6deg, #1F5073 1.19%, rgba(31, 80, 115, 0) 98.81%);
+            pointer-events: none;
+        }
+        &::after {
+            bottom: 30px;
+            transform: rotate(180deg)
+        }
+    }
+    &__title {
+        text-align: left;
+        margin-bottom: 7px;
+    }
+    &-swiper-wrap {
+        position: relative;
+    }
+    &-swiper {
+        overflow: hidden;
+    }
+    .swiper {
+        max-height: 65vw;
+        max-width: 1320px;
+        img {
+            object-fit: cover;
+        }
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        color: #FFFFFF80;
+        transform: translateY(-50%);
+        left: 50%;
+        z-index: 15;
+    }
+    .swiper-button-prev {
+        transform: rotate(-90deg);
+        top: -12px;
+    }
+    .swiper-button-next {
+        top: calc(100% + 12px);
+        transform: rotate(90deg)
+    }
+    .swiper-slide {
+        height: auto;
+    }
+}
+
+@media(max-width: 768px) {
+    .reviews {
+        &__container {
+            padding-top: 13px;
+            padding-bottom: 24px;
+        }
+        &__wrap {
+            flex-direction: column;
+            padding: 16px 8px;
+            >*:not(:last-child) {
+                margin-right: 0;
+                margin-bottom: 15px;
+            }
+            &::before,
+            &::after {
+                display: none;
+            }
+        }
+        &__title {
+            font-size: 22px;
+        }
+        .swiper-button-prev,
+        .swiper-button-next {
+            top: 50%;
+        }
+        .swiper-button-prev {
+            transform: rotate(180deg);
+            left: 0;
+        }
+        .swiper-button-next {
+            right: 0;
+            transform: rotate(-360deg);
+            left: auto;
+        }
+        &__shadow {
+            display: block;
+        }
+    }
+}

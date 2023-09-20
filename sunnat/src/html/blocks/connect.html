@@ -1,0 +1,39 @@
+<section class="connect section">
+    <div class="connect__bg">
+        <div class="connect__container container">
+            <h2 class="connect__title section-title title-decor connect__title-mobile">Связаться со мной</h2>
+            <div class="connect__wrap section-wrap">
+                <h2 class="connect__title section-title title-decor connect__title-desktop">Связаться со мной</h2>
+                <p class="connect__quot">«Профессионализм определяется делом и фактом. Ежедневно вникаю в дела своих клиентов, нахожу лучшие решения, и радуюсь вместе с вами лучшим результатом»</p>
+                <div class="connect__row">
+                    <div class="connect__left">
+                        <p class="connect__descr">Я открыт для обсуждения ваших проектов. Свяжитесь со мной удобным способом:</p>
+                        <p class="connect__descr">Удобный способ связи</p>
+                    </div>
+                    <div class="connect__right">
+                        <form class="connect__form" action="#" id="connect">
+                            <div class="connect__form-container">
+                                <label class="connect__label">
+                  <span class="connect__error error-name"></span>
+                  <input class="connect__input input-name input-reset" type="text" placeholder="Имя">
+                </label>
+                                <label class="connect__label">
+                  <span class="connect__error error-phone"></span>
+                  <input class="connect__input input-phone input-reset" type="number" placeholder="Телефон">
+                </label>
+                                <label class="connect__label">
+                  <span class="connect__error error-social"></span>
+                  @@include('./connectList.html', {})
+                </label>
+
+                                <button class="connect__btn btn-reset">Отправить</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
