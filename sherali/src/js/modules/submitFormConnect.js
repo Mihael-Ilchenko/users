@@ -1,10 +1,10 @@
-import { successSubmit } from "./functions.js";
+const inputName = document.querySelector('.input-name');
+const inputPhone = document.querySelector('.input-phone');
 
 function submitFormConnect() {
-    const container = document.querySelector('.connect__right');
+
     const form = document.getElementById('connect');
-    const inputName = document.querySelector('.input-name');
-    const inputPhone = document.querySelector('.input-phone');
+
     const errorName = document.querySelector('.error-name');
     const errorPhone = document.querySelector('.error-phone');
     const listSocials = document.querySelectorAll('.connect-list__checkbox');
@@ -12,6 +12,7 @@ function submitFormConnect() {
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
+
         if (!checkInput(inputName, errorName, 'name')) {
             return;
         }
@@ -22,7 +23,7 @@ function submitFormConnect() {
             return;
         }
 
-        successSubmit(container);
+        success();
     });
 
     [inputName, inputPhone].forEach(inp => {
@@ -41,6 +42,31 @@ function submitFormConnect() {
         })
     })
 };
+
+function success() {
+    const modal = document.querySelector('.modal');
+    const btnClose = document.querySelector('.success__btn');
+    const btnOpen = document.querySelector('.connect__btn');
+    const modalContent = document.querySelector('.modal__content');
+    modal.classList.add('d-flex');
+    document.body.classList.add('overflowYHidden');
+    inputName.value = ''
+    inputPhone.value = ''
+
+    btnClose.addEventListener('click', () => {
+        modal.classList.remove('d-flex');
+        document.body.classList.remove('overflowYHidden')
+    })
+    modalContent.addEventListener('click', e => e.stopPropagation());
+    document.addEventListener('click', (e) => {
+        if (e.target !== modalContent && e.target !== btnOpen) {
+            modal.classList.remove('d-flex');
+            document.body.classList.remove('overflowYHidden')
+        }
+    })
+
+}
+
 
 function checkInputSocial(list, error) {
 

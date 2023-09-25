@@ -2,13 +2,13 @@
      box-sizing: border-box;
      font-size: 16px;
  }
-
+ 
  *,
  *::before,
  *::after {
      box-sizing: inherit;
  }
-
+ 
  body {
      font-family: $main_ff, sans-serif;
      min-width: 320px;
@@ -17,35 +17,35 @@
      color: $white;
      position: relative;
  }
-
+ 
  .container {
      margin: 0 auto;
      padding: 0 60px;
  }
-
+ 
  img {
      display: block;
      max-width: 100%;
  }
-
+ 
  .section-wrap {
      border: 4px solid $gray;
      border-radius: 40px;
  }
-
+ 
  .section-title {
      font-size: 45px;
      text-align: center;
  }
-
+ 
  .section-bg {
      background: url('../img/spots/blue_spot.png') no-repeat left bottom /cover, url('../img/spots/pink_spot.png') no-repeat 0 100% /cover;
  }
-
+ 
  .pre-space {
      word-spacing: 30000px;
  }
-
+ 
  .title-decor {
      position: relative;
      &::after {
@@ -59,22 +59,22 @@
          background-image: url('../img/title_decor.svg');
      }
  }
-
+ 
  .link-reset {
      text-decoration: none;
      color: inherit;
  }
-
+ 
  .link-reset:focus {
      outline: none;
  }
-
+ 
  .list-reset {
      margin: 0;
      padding: 0;
      list-style: none;
  }
-
+ 
  .input-reset {
      border: none;
      padding: 0;
@@ -85,11 +85,11 @@
          color: inherit;
      }
  }
-
+ 
  .input-reset:focus {
      outline: none;
  }
-
+ 
  h1,
  h2,
  h3,
@@ -99,7 +99,7 @@
  p {
      margin: 0;
  }
-
+ 
  .btn-reset {
      padding: 0;
      background-color: transparent;
@@ -108,7 +108,7 @@
      font: inherit;
      color: inherit;
  }
-
+ 
  .anim-color {
      transition: color $short;
      &:focus-visible,
@@ -117,24 +117,51 @@
          color: $manhattan;
      }
  }
-
+ 
+ .overflowYHidden {
+     overflow-y: hidden;
+ }
+ 
+ .anim-bg {
+     position: relative;
+     &::after {
+         content: '';
+         position: absolute;
+         width: calc(100% + 10px);
+         left: 50%;
+         top: 50%;
+         transform: translateX(-50%) translateY(-50%);
+         height: calc(100% + 10px);
+         background: linear-gradient(91.43deg, rgba(255, 132, 79, 0.72) 16.38%, #652D91 78.44%);
+         filter: blur(8px);
+         z-index: -1;
+         opacity: 0;
+         transition: opacity $short;
+     }
+     &:focus-visible::after,
+     &:focus::after,
+     &:hover::after {
+         opacity: 1;
+     }
+ }
+ 
  .sect-svg {
      position: absolute;
      height: 100%;
      pointer-events: none;
  }
-
+ 
  .swiper-button-next::after,
  .swiper-button-prev::after {
      display: none;
  }
-
+ 
  @media(max-width: 1024px) {
      .container {
          padding: 0 30px;
      }
  }
-
+ 
  @media(max-width: 768px) {
      .container {
          padding: 0 15px;

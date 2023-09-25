@@ -1,0 +1,1031 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" /> -->
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Халимов Суннат</title>
+</head>
+
+
+<body>
+    <header class="header">
+    <div class="container header__container">
+        <a class="logo link-reset" href="/">
+    <img class="logo__img" src="./img/logo.svg" alt="Логотип">
+
+    <span class="logo__text">Пол и Холл</span>
+</a> <nav class="nav">
+    <ul class="nav__list list-reset">
+        <li class="nav__item"><a class="nav__link anim-bg link-reset scroll" href="#about">Обо мне</a></li>
+        <li class="nav__item"><a class="nav__link  anim-bg link-reset scroll" href="#">Знания</a></li>
+        <li class="nav__item"><a class="nav__link anim-bg link-reset scroll" href="#projects">Проекты</a></li>
+        <li class="nav__item"><a class="nav__link anim-bg link-reset scroll" href="#company">О компании</a></li>
+        <li class="nav__item"><a class="nav__link anim-bg link-reset scroll" href="#reviews">Отзывы</a></li>
+    </ul>
+</nav> <ul class="contacts list-reset">
+    <li class="contacts__item">
+        <a class="contacts__link anim-bg link-reset" href="#" target="_blank">
+            <svg width="23" height="17" viewBox="0 0 23 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M8.2478 10.0119L11.5023 12.2049L14.6395 10.0719L21.6717 16.9093C21.4866 16.9683 21.2888 17 21.083 17H1.91705C1.66405 17 1.42255 16.9513 1.2006 16.864L8.2478 10.0119ZM23 4.3928V15.1107C23 15.3907 22.9379 15.6559 22.8275 15.895L15.9344 9.19247L23 4.3928ZM1.08514e-06 4.45287L6.9483 9.1358L0.121901 15.7749C0.0410512 15.5625 -0.000244068 15.3375 1.08514e-06 15.1107V4.45287ZM21.083 0C22.1409 0 23 0.845466 23 1.88927V2.5534L11.4977 10.3677L1.08514e-06 2.618V1.88927C1.08514e-06 0.8466 0.857901 0 1.91705 0H21.083Z"
+          fill="currentColor" />
+      </svg>
+        </a>
+    </li>
+    <li class="contacts__item">
+        <a class="contacts__link anim-bg link-reset" href="#" target="_blank">
+            <svg width="22" height="19" viewBox="0 0 22 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M22 0.673075L18.52 18.209C18.52 18.209 18.0331 19.4248 16.6956 18.8417L8.66635 12.6882L8.62912 12.67C9.71368 11.6966 18.1238 4.13827 18.4914 3.79566C19.0604 3.26505 18.7072 2.94917 18.0465 3.34999L5.62365 11.2357L0.83095 9.6238C0.83095 9.6238 0.076719 9.35563 0.00416013 8.77253C-0.0693535 8.18848 0.855772 7.87259 0.855772 7.87259L20.3942 0.211177C20.3942 0.211177 22 -0.494078 22 0.673075Z"
+          fill="currentColor" />
+      </svg>
+
+        </a>
+    </li>
+    <li class="contacts__item">
+        <a class="contacts__link anim-bg link-reset" href="#" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M17.0732 2.91667C15.1916 1.04167 12.6829 0 10.0348 0C4.52961 0 0.0696853 4.44444 0.0696853 9.93056C0.0696853 11.6667 0.557491 13.4028 1.39373 14.8611L0 20L5.29617 18.6111C6.75958 19.375 8.36237 19.7917 10.0348 19.7917C15.5401 19.7917 20 15.3472 20 9.86111C19.9303 7.29167 18.9547 4.79167 17.0732 2.91667ZM14.8432 13.4722C14.6341 14.0278 13.6585 14.5833 13.1707 14.6528C12.7526 14.7222 12.1951 14.7222 11.6376 14.5833C11.2892 14.4444 10.8014 14.3056 10.2439 14.0278C7.73519 12.9861 6.13241 10.4861 5.99303 10.2778C5.85366 10.1389 4.94774 8.95833 4.94774 7.70833C4.94774 6.45833 5.57491 5.90278 5.78397 5.625C5.99303 5.34722 6.27178 5.34722 6.48084 5.34722C6.62021 5.34722 6.82927 5.34722 6.96864 5.34722C7.10801 5.34722 7.31707 5.27778 7.52613 5.76389C7.73519 6.25 8.22299 7.5 8.29268 7.56944C8.36237 7.70833 8.36237 7.84722 8.29268 7.98611C8.22299 8.125 8.15331 8.26389 8.01393 8.40278C7.87456 8.54167 7.73519 8.75 7.6655 8.81944C7.52613 8.95833 7.38676 9.09722 7.52613 9.30555C7.6655 9.58333 8.15331 10.3472 8.91986 11.0417C9.89547 11.875 10.662 12.1528 10.9408 12.2917C11.2195 12.4306 11.3589 12.3611 11.4983 12.2222C11.6376 12.0833 12.1254 11.5278 12.2648 11.25C12.4042 10.9722 12.6132 11.0417 12.8223 11.1111C13.0314 11.1806 14.2857 11.8056 14.4948 11.9444C14.7735 12.0833 14.9129 12.1528 14.9826 12.2222C15.0523 12.4306 15.0523 12.9167 14.8432 13.4722Z"
+          fill="currentColor" />
+      </svg>
+        </a>
+    </li>
+    <li class="contacts__item">
+        <a class="contacts__link anim-bg link-reset" href="tel:+79779999999" target="_blank">+7 977 999-99-99</a>
+    </li>
+</ul>
+    </div>
+
+</header>
+    <main>
+        <section class="section hero">
+    <div class="container hero__container">
+        <div class="hero__wrap section-wrap">
+            <h1 class="hero__title hero__title_mobile">Халимов Суннат</h1>
+            <img class="hero__img" src="./img/my_photo.png" alt="Алиев Шерали">
+            <div class="hero__content">
+                <h1 class="hero__title">Халимов Суннат</h1>
+                <div class="hero__right">
+                    <p class="hero__descr">
+                        Высококвалифицированный специалист по комплексным продажам
+                    </p>
+                    <button class="hero__btn btn-reset">Связаться со мной</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <svg class="hero__head-svg sect-svg" viewBox="0 0 1289 825" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g filter="url(#filter0_f_95_2414)">
+        <path d="M553.428 119.562C569.286 90.8809 650.016 87.4998 684.025 96.244C727.402 117.93 770.507 118.979 784.888 109.943C785.763 106.251 806.227 86.9751 881.087 103.531C955.947 120.086 925.494 189.807 900.91 214.582C868.066 244.118 862.605 307.503 941.43 335.251C1020.25 363 979.618 408.508 969.707 426.482L962.419 518.879L881.087 525H574.125L363.654 518.879C346.358 509.455 289.027 474.983 301.854 446.302C317.887 410.451 349.953 384.51 370.942 360.027C391.931 335.543 442.071 309.31 497.749 303.189C553.428 297.069 565.672 278.706 553.428 239.065C541.185 199.425 533.605 155.413 553.428 119.562Z" fill="#FF844F" fill-opacity="0.72"/>
+        </g>
+        <defs>
+        <filter id="filter0_f_95_2414" x="0" y="-208" width="1289" height="1033" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+        <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+        <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+        <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_95_2414"/>
+        </filter>
+        </defs>
+        </svg>
+
+    <svg class="hero__body-svg sect-svg" viewBox="0 0 1175 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g filter="url(#filter0_f_131_296)">
+            <path d="M130.292 258.541C157.405 205.948 295.43 199.748 353.577 215.782C427.74 255.547 501.437 257.472 526.025 240.903C527.52 234.133 562.508 198.786 690.499 229.144C818.489 259.503 766.423 387.35 724.391 432.78C668.237 486.941 658.9 603.172 793.668 654.055C928.437 704.937 858.96 788.387 842.014 821.346L829.554 990.776L690.499 1002H165.679L-194.169 990.776C-223.741 973.495 -321.761 910.284 -299.831 857.691C-272.419 791.95 -217.594 744.381 -181.709 699.485C-145.824 654.589 -60.0983 606.486 35.0969 595.262C130.292 584.038 151.225 550.366 130.292 477.677C109.359 404.988 96.4007 324.281 130.292 258.541Z" fill="#323171" fill-opacity="0.7"/>
+            </g>
+            <defs>
+            <filter id="filter0_f_131_296" x="-603" y="-92" width="1778" height="1394" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+            <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+            <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+            <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_131_296"/>
+            </filter>
+            </defs>
+            </svg>
+    <svg class="hero__foot-svg sect-svg" viewBox="0 0 1378 1024" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g filter="url(#filter0_f_131_297)">
+              <path d="M734.679 168.28C761.879 119.08 900.346 113.28 958.679 128.28C1033.08 165.48 1107.01 167.28 1131.68 151.78C1133.18 145.447 1168.28 112.38 1296.68 140.78C1425.08 169.18 1372.85 288.78 1330.68 331.28C1274.35 381.947 1264.98 490.68 1400.18 538.28C1535.38 585.88 1465.68 663.947 1448.68 694.78L1436.18 853.28L1296.68 863.78H770.179L409.179 853.28C379.513 837.114 281.179 777.98 303.179 728.78C330.679 667.28 385.679 622.78 421.679 580.78C457.679 538.78 543.679 493.78 639.179 483.28C734.679 472.78 755.679 441.28 734.679 373.28C713.679 305.28 700.679 229.78 734.679 168.28Z" fill="#52799D"/>
+              </g>
+              <defs>
+              <filter id="filter0_f_131_297" x="0" y="-179" width="1781.77" height="1342.78" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+              <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+              <feGaussianBlur stdDeviation="150" result="effect1_foregroundBlur_131_297"/>
+              </filter>
+              </defs>
+              </svg>
+
+
+
+</section>
+ <section class="section about" id="about">
+    <div class="about__bg section-bg">
+        <div class="container about__container">
+            <h2 class="about__title section-title about__title_mobile">
+                Немного обо мне
+            </h2>
+            <div class="about__wrap section-wrap">
+                <div class="about__content">
+                    <div class="about__text">
+                        <h2 class="about__title section-title about__title_desktop">
+                            Немного обо мне
+                        </h2>
+                        <p class="about__quot">“Опыт технолога помогает глубоко анализировать запрос и быстро выдавать его решение”.</p>
+                        <div class="about__box">
+                            <h4 class="about__subtitle">Опыт<span class="subtitle-decor"></span></h4>
+                            <p class="about__descr">
+                                Работаю в компании 3 года, имею квалификацию технолога и руковожу клиенскими проектами.
+                            </p>
+                            <p class="about__descr">
+                                Быстро и понятно смогу обьяснить все детали вопроса от материала до укладки.
+                            </p>
+                            <p class="about__descr_mobile">
+                                Работаю в компании 3 года, имею квалификацию технолога и руковожу клиенскими проектами. Быстро и понятно смогу обьяснить все детали вопроса от материала до укладки. Опыт технолога помогает глубоко анализировать запрос и быстро выдавать его решение.
+                            </p>
+                        </div>
+                        <div class="about__box">
+                            <h4 class="about__subtitle">Связь с клиентами<span class="subtitle-decor"></span></h4>
+                            <p class="about__descr">Проконсультирую по телефону и в любом месенджере, выеду на обьект, дам все нужные рекомендации по сопутствующим материалам и возможным расходам.</p>
+                            <p class="about__descr">Я всегда на связи и готов выполнить любой запрос быстро и качественно.</p>
+                            <p class="about__descr_mobile">Проконсультирую по телефону и в любом месенджере, выеду на обьект, дам все нужные рекомендации по сопутствующим материалам и возможным расходам. Я всегда на связи и готов выполнить лбой запрос быстро и качественно.</p>
+                        </div>
+                    </div>
+                    <div class="about__right">
+                        <picture class="about__picture">
+                            <source srcset="./img/about_photo.png" media="(min-width: 769px)">
+                            <source srcset="./img/about_photo_mobile.png" media="(max-width: 768px)">
+                            <img src="./img/about_photo.png" alt="Фотография Шерали">
+                        </picture>
+                        <ul class="some list-reset">
+                            <li class="some__item analitic_bg"><span class="some__text">аналитика</span></li>
+                            <li class="some__item mind_bg"><span class="some__text">критическое мышление</span></li>
+                            <li class="some__item commun_bg"><span class="some__text">коммуникабельность</span></li>
+
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="section achive">
+    <div class="about__bg section-bg">
+        <div class="container achive__container">
+            <h2 class="achive__title section-title achive__title-mobile title-decor">Сертификаты и награды</h2>
+            <div class="achive__wrap section-wrap">
+                <h2 class="achive__title section-title achive__title-desktop title-decor">Сертификаты и награды</h2>
+                <div class="achive__content">
+                    <ul class="prev list-reset">
+                        <li class="prev__item">
+                            <span class="prev__text">Сертификаты</span>
+                            <img class="prev__img" src="./img/achive/certificate.png" alt="Сертификат">
+                        </li>
+                        <li class="prev__item">
+                            <span class="prev__text">IШкола</span>
+                            <img class="prev__img" src="./img/achive/school.png" alt="Сертификат школа">
+                        </li>
+                        <li class="prev__item">
+                            <span class="prev__text">Дипломы</span>
+                            <img class="prev__img" src="./img/achive/diplom.png" alt="Дипломы">
+                        </li>
+                    </ul>
+                    <ul class="full list-reset">
+                        <li class="full__item">
+                            <p class="full__text">
+                                Сертифицирован профессиональным центром школы напольных покрытий мирового уровня
+                            </p>
+                            <img class="full__img" src="./img/achive/certificate.png" alt="Сертификат">
+                        </li>
+                        <li class="full__item">
+                            <p class="full__text pre-space">
+                                Форбо, Tarkett, Litokoll, AW, Bostik
+                            </p>
+                            <img class="full__img" src="./img/achive/school.png" alt="Сертификат школа">
+                        </li>
+                        <li class="full__item">
+                            <p class="full__text">
+                                Дипломирован сертификатами 1–2 уровней знаний напольных покрытии и их монтажа
+                            </p>
+                            <img class="full__img" src="./img/achive/diplom.png" alt="Дипломы">
+                        </li>
+                    </ul>
+                </div>
+                <div class="achive__content_mobile">
+                    <div class="top-swiper">
+                        <div class="achive-swiper swiper-container">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide"><img class="achive-swiper__img" src="./img/achive/certificate.png" alt="Сертификат"></div>
+                                <div class="swiper-slide"><img class="achive-swiper__img" src="./img/achive/school.png" alt="Сертификат школа"></div>
+                                <div class="swiper-slide"><img class="achive-swiper__img" src="./img/achive/diplom.png" alt="Дипломы">
+                                </div>
+                            </div>
+                            <div class="swiper-button-prev">
+                                <div class="anim-bg">
+    <svg class="anim-color" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.43 13.0699L18.5 6.99995L12.43 0.929946M1.5 6.99994L18.33 6.99995" stroke="currentColor"
+      stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+</div>
+                            </div>
+                            <div class="swiper-button-next">
+                                <div class="anim-bg">
+    <svg class="anim-color" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.43 13.0699L18.5 6.99995L12.43 0.929946M1.5 6.99994L18.33 6.99995" stroke="currentColor"
+      stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="achive-swiper_mini swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img class="achive-swiper_mini__img" src="./img/achive/certificate.png" alt="Сертификат"></div>
+                            <div class="swiper-slide"><img class="achive-swiper_mini__img" src="./img/achive/school.png" alt="Сертификат школа"></div>
+                            <div class="swiper-slide"><img class="achive-swiper_mini__img" src="./img/achive/diplom.png" alt="Дипломы">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- </div> -->
+</section>
+ <section class="projects section" id="projects">
+    <div class="section-bg">
+        <div class="projects__container container">
+            <h2 class="projects__title section-title title-decor projects__title-mobile">Мои проекты</h2>
+            <div class="projects__wrap section-wrap">
+                <h2 class="projects__title section-title title-decor projects__title-desktop">Мои проекты</h2>
+                <div class="projects__swiper-top">
+                    <div class="swiper-button-prev"><div class="anim-bg">
+    <svg class="anim-color" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.43 13.0699L18.5 6.99995L12.43 0.929946M1.5 6.99994L18.33 6.99995" stroke="currentColor"
+      stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+</div></div>
+                    <div class="projects__swiper swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <p class="projects__descr">Ковролин Ege Carpet для ресторана Восток, парк Зарядье. Площадь — 200 м²</p>
+                                <img class="projects__img" src="./img/projects/cover.png" alt="Ковролин Ege Carpet">
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="projects__descr">Индийский ковёр Jacaranda Simla Oatmeal для TOMMY HILFIGER. Площадь — 26 м²
+                                </p>
+                                <img class="projects__img" src="./img/projects/indi-cover.png" alt="Индийский ковёр">
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="projects__descr">Спортивный линолеум LG Rexcourt для Mail.ru Group. Площадь — 980 м²</p>
+                                <img class="projects__img" src="./img/projects/linoleum.png" alt="Спортивный линолеум">
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="projects__descr">Тканое ПВХ-покрытие WISE для ВТБ. Площадь — 500 м²</p>
+                                <img class="projects__img" src="./img/projects/wise.png" alt="Тканое ПВХ-покрытие WISE">
+                            </div>
+                            <div class="swiper-slide">
+                                <p class="projects__descr">Тканое ПВХ-покрытие Bolon для Mega-IKEA. Площадь — 360 м²</p>
+                                <img class="projects__img" src="./img/projects/bolon.png" alt="Тканое ПВХ-покрытие Bolon">
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="swiper-button-next"><div class="anim-bg">
+    <svg class="anim-color" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.43 13.0699L18.5 6.99995L12.43 0.929946M1.5 6.99994L18.33 6.99995" stroke="currentColor"
+      stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+</div></div>
+                </div>
+                <div class="projects__swiper_mini swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/projects/cover.png" alt="Ковролин Ege Carpet">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/projects/indi-cover.png" alt="Индийский ковёр">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/projects/linoleum.png" alt="Спортивный линолеум">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/projects/wise.png" alt="Тканое ПВХ-покрытие WISE">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/projects/bolon.png" alt="Тканое ПВХ-покрытие Bolon">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="connect section">
+    <div class="connect__bg">
+        <div class="connect__container container">
+            <h2 class="connect__title section-title title-decor connect__title-mobile">Связаться со мной</h2>
+            <div class="connect__wrap section-wrap">
+                <h2 class="connect__title section-title title-decor connect__title-desktop">Связаться со мной</h2>
+                <p class="connect__quot">«Профессионализм определяется делом и фактом. Ежедневно вникаю в дела своих клиентов, нахожу лучшие решения, и радуюсь вместе с вами лучшим результатом»</p>
+                <div class="connect__row">
+                    <div class="connect__left">
+                        <p class="connect__descr">Я открыт для обсуждения ваших проектов. Свяжитесь со мной удобным способом:</p>
+                        <p class="connect__descr">Удобный способ связи</p>
+                    </div>
+                    <div class="connect__right">
+                        <form class="connect__form" action="#" id="connect">
+                            <div class="connect__form-container">
+                                <label class="connect__label">
+                  <span class="connect__error error-name"></span>
+                  <input class="connect__input input-name input-reset" type="text" placeholder="Имя">
+                </label>
+                                <label class="connect__label">
+                  <span class="connect__error error-phone"></span>
+                  <input class="connect__input input-phone input-reset" type="number" placeholder="Телефон">
+                </label>
+                                <label class="connect__label">
+                  <span class="connect__error error-social"></span>
+                  <ul class="connect-list list-reset">
+    <li class="connect-list__item">
+        <label class="connect-list__label anim-color">
+      <input class="connect-list__checkbox" type="checkbox">
+      <svg width="23" height="21" viewBox="0 0 23 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M22.9 1.60504L19.3686 19.7887C19.3686 19.7887 18.8745 21.0494 17.5172 20.4447L9.36933 14.0639L9.33154 14.0451C10.4321 13.0357 18.9665 5.19822 19.3395 4.84296C19.9169 4.29275 19.5585 3.9652 18.888 4.38082L6.28168 12.5578L1.41818 10.8863C1.41818 10.8863 0.652804 10.6083 0.579173 10.0036C0.504573 9.39802 1.44337 9.07046 1.44337 9.07046L21.2704 1.12608C21.2704 1.12608 22.9 0.394778 22.9 1.60504Z"
+          fill="currentColor" />
+      </svg>
+      <span class="connect-list__text">Телеграм</span>
+      <svg class="connect-list__check" width="15" height="16" viewBox="0 0 15 16" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M7.44681 0.936172C3.35106 0.936172 0 4.28724 0 8.38298C0 12.4787 3.35106 15.8298 7.44681 15.8298C11.5426 15.8298 14.8936 12.4787 14.8936 8.38298C14.8936 4.28724 11.5426 0.936172 7.44681 0.936172ZM7.44681 14.3404C4.16277 14.3404 1.48936 11.667 1.48936 8.38298C1.48936 5.09894 4.16277 2.42553 7.44681 2.42553C10.7309 2.42553 13.4043 5.09894 13.4043 8.38298C13.4043 11.667 10.7309 14.3404 7.44681 14.3404ZM10.8649 5.09149L5.95745 9.99894L4.02872 8.07766L2.97872 9.12766L5.95745 12.1064L11.9149 6.14894L10.8649 5.09149Z"
+          fill="currentColor" />
+      </svg>
+    </label>
+    </li>
+    <li class="connect-list__item">
+        <label class="connect-list__label anim-color">
+      <input class="connect-list__checkbox" type="checkbox">
+      <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M21.814 3.97951C19.4927 1.69787 16.3976 0.430298 13.1305 0.430298C6.33841 0.430298 0.835974 5.83862 0.835974 12.5145C0.835974 14.6271 1.4378 16.7398 2.46951 18.5144L0.75 24.7678L7.28415 23.0777C9.08964 24.0072 11.0671 24.5142 13.1305 24.5142C19.9226 24.5142 25.425 19.1059 25.425 12.43C25.339 9.30333 24.1354 6.26115 21.814 3.97951ZM19.0628 16.8243C18.8049 17.5003 17.6012 18.1764 16.9994 18.2609C16.4835 18.3454 15.7957 18.3454 15.1079 18.1764C14.678 18.0074 14.0762 17.8383 13.3884 17.5003C10.2933 16.2327 8.31586 13.1906 8.1439 12.937C7.97195 12.768 6.85427 11.3315 6.85427 9.81036C6.85427 8.28927 7.62805 7.61323 7.88597 7.27521C8.1439 6.93719 8.4878 6.93719 8.74573 6.93719C8.91768 6.93719 9.17561 6.93719 9.34756 6.93719C9.51951 6.93719 9.77744 6.85268 10.0354 7.44422C10.2933 8.03575 10.8951 9.55684 10.9811 9.64135C11.0671 9.81036 11.0671 9.97937 10.9811 10.1484C10.8951 10.3174 10.8091 10.4864 10.6372 10.6554C10.4652 10.8244 10.2933 11.0779 10.2073 11.1624C10.0354 11.3315 9.86341 11.5005 10.0354 11.754C10.2073 12.092 10.8091 13.0216 11.7549 13.8666C12.9585 14.8807 13.9043 15.2187 14.2482 15.3877C14.5921 15.5567 14.764 15.4722 14.936 15.3032C15.1079 15.1342 15.7098 14.4581 15.8817 14.1201C16.0537 13.7821 16.3116 13.8666 16.5695 13.9511C16.8274 14.0356 18.375 14.7962 18.6329 14.9652C18.9768 15.1342 19.1488 15.2187 19.2348 15.3032C19.3207 15.5567 19.3207 16.1482 19.0628 16.8243Z"
+          fill="currentColor" />
+      </svg>
+      <span class="connect-list__text">WhatsApp</span>
+      <svg class="connect-list__check" width="15" height="16" viewBox="0 0 15 16" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M7.44681 0.936172C3.35106 0.936172 0 4.28724 0 8.38298C0 12.4787 3.35106 15.8298 7.44681 15.8298C11.5426 15.8298 14.8936 12.4787 14.8936 8.38298C14.8936 4.28724 11.5426 0.936172 7.44681 0.936172ZM7.44681 14.3404C4.16277 14.3404 1.48936 11.667 1.48936 8.38298C1.48936 5.09894 4.16277 2.42553 7.44681 2.42553C10.7309 2.42553 13.4043 5.09894 13.4043 8.38298C13.4043 11.667 10.7309 14.3404 7.44681 14.3404ZM10.8649 5.09149L5.95745 9.99894L4.02872 8.07766L2.97872 9.12766L5.95745 12.1064L11.9149 6.14894L10.8649 5.09149Z"
+          fill="currentColor" />
+      </svg>
+    </label>
+    </li>
+    <li class="connect-list__item">
+        <label class="connect-list__label anim-color">
+      <input class="connect-list__checkbox" type="checkbox"  checked>
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M5.84378 0.322663C7.18186 1.28449 8.22376 2.59734 9.11348 3.85361L9.63092 4.59721L10.1191 5.30733C10.3633 5.65919 10.4677 6.08736 10.4124 6.51025C10.3571 6.93314 10.1461 7.3212 9.8194 7.60048L7.53541 9.27359C7.42506 9.35218 7.34739 9.4676 7.31682 9.59842C7.28624 9.72923 7.30485 9.86655 7.36917 9.98486C7.88661 10.912 8.80676 12.293 9.86037 13.3322C10.9151 14.3714 12.3808 15.339 13.3864 15.9071C13.5125 15.9769 13.6609 15.9964 13.8012 15.9616C13.9414 15.9268 14.0628 15.8404 14.1404 15.7201L15.6271 13.4881C15.9004 13.13 16.3037 12.8901 16.7523 12.8186C17.201 12.7471 17.6603 12.8497 18.034 13.1047L18.8102 13.6347C20.2606 14.6277 21.8188 15.7558 23.0106 17.2604C23.1996 17.5003 23.3198 17.7859 23.3587 18.0873C23.3976 18.3887 23.3538 18.6949 23.2318 18.9739C22.252 21.2289 19.7725 23.1491 17.1935 23.0556L16.8423 23.036L16.5695 23.0129L16.2675 22.9782L15.9385 22.9344L15.5815 22.8766C15.5189 22.8655 15.4565 22.854 15.3941 22.842L15.0008 22.7589C14.932 22.744 14.8633 22.7286 14.7948 22.7127L14.3663 22.6041L13.9156 22.4771L13.445 22.327C11.2839 21.6042 8.54102 20.184 5.72672 17.4082C2.91359 14.6335 1.47366 11.9281 0.740816 9.79665L0.588628 9.33247L0.459854 8.88793L0.349811 8.46532L0.258498 8.06581C0.232124 7.94069 0.207537 7.8152 0.184745 7.68939L0.126212 7.33722L0.0793847 7.01276L0.0454353 6.71486L0.0220217 6.44582L0.00329098 6.09943C-0.0915336 3.56379 1.87637 1.1009 4.15216 0.139072C4.42607 0.0224131 4.72603 -0.0220025 5.02259 0.0101836C5.31916 0.0423698 5.60214 0.150052 5.84378 0.322663ZM15.3672 4.47367L15.503 4.48868C16.3552 4.63693 17.1378 5.04746 17.7389 5.66144C18.3399 6.27541 18.7285 7.0613 18.8488 7.90647C18.8917 8.1988 18.8194 8.49624 18.6467 8.7376C18.4741 8.97895 18.2142 9.14586 17.9206 9.20399C17.627 9.26212 17.3219 9.20704 17.0682 9.0501C16.8145 8.89316 16.6314 8.64628 16.5566 8.36025L16.5297 8.22746C16.4826 7.89619 16.3392 7.58546 16.117 7.33282C15.8947 7.08017 15.603 6.89642 15.2771 6.80377L15.0956 6.76336C14.8017 6.71197 14.5387 6.55175 14.3606 6.31547C14.1824 6.07919 14.1025 5.78471 14.1372 5.49224C14.1719 5.19978 14.3185 4.93144 14.5472 4.7421C14.7758 4.55277 15.0692 4.45674 15.3672 4.47367ZM15.3766 0.963499C17.2395 0.963499 19.0261 1.69341 20.3433 2.99265C21.6606 4.2919 22.4006 6.05405 22.4006 7.89146C22.4003 8.18576 22.286 8.46883 22.0812 8.68283C21.8764 8.89683 21.5964 9.02561 21.2986 9.04285C21.0007 9.0601 20.7074 8.96451 20.4786 8.77562C20.2498 8.58673 20.1027 8.31879 20.0675 8.02655L20.0593 7.89146C20.0597 6.71881 19.6077 5.58994 18.7949 4.73407C17.9822 3.8782 16.8697 3.35947 15.6833 3.28321L15.3766 3.27282C15.0661 3.27282 14.7683 3.15117 14.5488 2.93463C14.3292 2.71809 14.2059 2.42439 14.2059 2.11816C14.2059 1.81192 14.3292 1.51823 14.5488 1.30169C14.7683 1.08515 15.0661 0.963499 15.3766 0.963499Z"
+          fill="currentColor" />
+      </svg>
+      <span class="connect-list__text">Телефон</span>
+      <svg class="connect-list__check" width="15" height="16" viewBox="0 0 15 16" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M7.44681 0.936172C3.35106 0.936172 0 4.28724 0 8.38298C0 12.4787 3.35106 15.8298 7.44681 15.8298C11.5426 15.8298 14.8936 12.4787 14.8936 8.38298C14.8936 4.28724 11.5426 0.936172 7.44681 0.936172ZM7.44681 14.3404C4.16277 14.3404 1.48936 11.667 1.48936 8.38298C1.48936 5.09894 4.16277 2.42553 7.44681 2.42553C10.7309 2.42553 13.4043 5.09894 13.4043 8.38298C13.4043 11.667 10.7309 14.3404 7.44681 14.3404ZM10.8649 5.09149L5.95745 9.99894L4.02872 8.07766L2.97872 9.12766L5.95745 12.1064L11.9149 6.14894L10.8649 5.09149Z"
+          fill="currentColor" />
+      </svg>
+    </label>
+    </li>
+    <li class="connect-list__item">
+        <label class="connect-list__label anim-color">
+      <input class="connect-list__checkbox" type="checkbox">
+      <svg width="25" height="18" viewBox="0 0 25 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path fill-rule="evenodd" clip-rule="evenodd"
+          d="M8.965 10.4558L12.5025 12.746L15.9125 10.5185L23.5562 17.6591C23.355 17.7206 23.14 17.7538 22.9163 17.7538H2.08375C1.80875 17.7538 1.54625 17.7029 1.305 17.6117L8.965 10.4558ZM25 4.58757V15.7807C25 16.0731 24.9325 16.35 24.8125 16.5998L17.32 9.60005L25 4.58757ZM1.1795e-06 4.6503L7.5525 9.54088L0.132501 16.4743C0.0446209 16.2526 -0.000265292 16.0176 1.1795e-06 15.7807V4.6503ZM22.9163 0C24.0662 0 25 0.882954 25 1.97304V2.66662L12.4975 10.8274L1.1795e-06 2.73408V1.97304C1.1795e-06 0.884137 0.932501 0 2.08375 0H22.9163Z"
+          fill="currentColor" />
+      </svg>
+      <span class="connect-list__text">Email</span>
+      <svg class="connect-list__check" width="15" height="16" viewBox="0 0 15 16" fill="none"
+        xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M7.44681 0.936172C3.35106 0.936172 0 4.28724 0 8.38298C0 12.4787 3.35106 15.8298 7.44681 15.8298C11.5426 15.8298 14.8936 12.4787 14.8936 8.38298C14.8936 4.28724 11.5426 0.936172 7.44681 0.936172ZM7.44681 14.3404C4.16277 14.3404 1.48936 11.667 1.48936 8.38298C1.48936 5.09894 4.16277 2.42553 7.44681 2.42553C10.7309 2.42553 13.4043 5.09894 13.4043 8.38298C13.4043 11.667 10.7309 14.3404 7.44681 14.3404ZM10.8649 5.09149L5.95745 9.99894L4.02872 8.07766L2.97872 9.12766L5.95745 12.1064L11.9149 6.14894L10.8649 5.09149Z"
+          fill="currentColor" />
+      </svg>
+    </label>
+    </li>
+</ul>
+
+                </label>
+
+                                <button class="connect__btn btn-reset">Отправить</button>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<div class="modal">
+    <div class="modal__content">
+        <div class="success">
+            <div class="success__descr">Ваш запрос отправлен. С вами свяжется менеджер в течение 15-ти минут</div>
+            <button class="success__btn  btn-reset">
+        <svg width="23" height="23" viewBox="0 0 23 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M5.65674 5.65686L16.9704 16.9706" stroke="black" stroke-width="2" stroke-linecap="round" />
+          <path d="M5.65674 16.9706L16.9704 5.65687" stroke="black" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+        </div>
+    </div>
+</div> <section class="company section" id="company">
+    <div class="company__bg section-bg">
+        <div class="company__container container">
+            <h2 class="company__title section-title company__title-mobile">О компании</h2>
+            <div class="company__wrap section-wrap">
+                <div class="company__left">
+                    <h2 class="company__title section-title company__title-desktop">О компании</h2>
+                    <p class="company__descr">
+                        «Пол и Холл» - профессиональная компания по продаже и укладке эксклюзивных напольных покрытий, которая предоставляет самую большую гарантию на монтаж 36 месяцев.
+                    </p>
+                    <ul class="company__list list-reset">
+                        <li class="company__item">
+                            <img src="./img/company/clip.png" alt="Декоративное изображение">
+                            <p class="company__subdescr">
+                                Мы — официальные дилеры заводов-производителей напольных покрытий из более чем 13 стран мира
+                            </p>
+                        </li>
+                        <li class="company__item">
+                            <img src="./img/company/some.png" alt="Декоративное изображение">
+                            <p class="company__subdescr">
+                                Производим профессиональный монтаж напольных покрытий по европейскому стандарту качества DIN 18365 и ISO 9001:2000
+                            </p>
+                        </li>
+                        <li class="company__item">
+                            <img src="./img/company/some2.png" alt="Декоративное изображение">
+                            <p class="company__subdescr">
+                                Миссия нашей компании - создать комфорт и уют под вашими ногами!
+                            </p>
+                        </li>
+                    </ul>
+                    <div class="partners partners-desktop"><h4 class="partners__title">
+    В числе наших клиентов:</h4>
+
+<ul class="partners__list list-reset">
+    <li class="partners__item">
+        <img src="./img/partners/sber.svg" alt="Сбербанк">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/ntv.svg" alt="Нтв">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/rosselhoz.svg" alt="Россельхоз банк">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/ikea.svg" alt="ikea">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/mir.svg" alt="Мир">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/comedy.svg" alt="Камеди клаб">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/mail.svg" alt="Email">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/vtb.svg" alt="Втб">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/lukoil.svg" alt="Лукойл">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/world.svg" alt="World Class">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/rosbank.svg" alt="Росбанк">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/microsoft.svg" alt="Microsoft">
+    </li>
+</ul>
+</div>
+
+                </div>
+                <div class="company__right">
+                    <img class="company__prev" src="./img/company/bg.png" alt="Коллективная работа"> <ul class="statistic list-reset">
+    <li class="statistic__item">
+        <span class="statistic__title">20000</span>
+        <p class="statistic__descr">товаров в ассортименте</p>
+    </li>
+    <li class="statistic__item">
+        <span class="statistic__title">15</span>
+        <p class="statistic__descr">категорий напольных покрытий</p>
+    </li>
+    <li class="statistic__item">
+        <span class="statistic__title">5000</span>
+        <p class="statistic__descr">образцов в реальном виде</p>
+    </li>
+</ul>
+
+                    <div class="partners partners-mobile"><h4 class="partners__title">
+    В числе наших клиентов:</h4>
+
+<ul class="partners__list list-reset">
+    <li class="partners__item">
+        <img src="./img/partners/sber.svg" alt="Сбербанк">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/ntv.svg" alt="Нтв">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/rosselhoz.svg" alt="Россельхоз банк">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/ikea.svg" alt="ikea">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/mir.svg" alt="Мир">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/comedy.svg" alt="Камеди клаб">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/mail.svg" alt="Email">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/vtb.svg" alt="Втб">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/lukoil.svg" alt="Лукойл">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/world.svg" alt="World Class">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/rosbank.svg" alt="Росбанк">
+    </li>
+    <li class="partners__item">
+        <img src="./img/partners/microsoft.svg" alt="Microsoft">
+    </li>
+</ul>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="reviews section" id="reviews">
+    <div class="section-bg">
+        <div class="reviews__container container">
+            <h2 class="reviews__title section-title">Отзывы о проделанной работе</h2>
+            <div class="reviews__wrap section-wrap">
+                <div class="reviews__left reviews-swiper-wrap">
+                    <div class="reviews-swiper reviews-swiper-one swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/reviews/left_one.png" alt="Отзыв">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/reviews/left_one.png" alt="Отзыв">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/reviews/left_one.png" alt="Отзыв">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-prev reviews-left-prev"><div class="anim-bg">
+    <svg class="anim-color" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.43 13.0699L18.5 6.99995L12.43 0.929946M1.5 6.99994L18.33 6.99995" stroke="currentColor"
+      stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+</div></div>
+                    <div class="swiper-button-next reviews-left-next"><div class="anim-bg">
+    <svg class="anim-color" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.43 13.0699L18.5 6.99995L12.43 0.929946M1.5 6.99994L18.33 6.99995" stroke="currentColor"
+      stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+</div></div>
+                </div>
+                <div class="reviews__center reviews-swiper-wrap">
+                    <div class="reviews-swiper swiper reviews-swiper-two">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/reviews/center_one.png" alt="Отзыв">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/reviews/center_one.png" alt="Отзыв">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/reviews/center_one.png" alt="Отзыв">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-prev reviews-center-prev"><div class="anim-bg">
+    <svg class="anim-color" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.43 13.0699L18.5 6.99995L12.43 0.929946M1.5 6.99994L18.33 6.99995" stroke="currentColor"
+      stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+</div></div>
+                    <div class="swiper-button-next reviews-center-next"><div class="anim-bg">
+    <svg class="anim-color" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.43 13.0699L18.5 6.99995L12.43 0.929946M1.5 6.99994L18.33 6.99995" stroke="currentColor"
+      stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+</div></div>
+                </div>
+                <div class="reviews__right reviews-swiper-wrap">
+                    <div class="reviews-swiper swiper reviews-swiper-three">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./img/reviews/right_one.png" alt="Отзыв">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/reviews/right_one.png" alt="Отзыв">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./img/reviews/right_one.png" alt="Отзыв">
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="swiper-button-prev reviews-right-prev"><div class="anim-bg">
+    <svg class="anim-color" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.43 13.0699L18.5 6.99995L12.43 0.929946M1.5 6.99994L18.33 6.99995" stroke="currentColor"
+      stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+</div></div>
+                    <div class="swiper-button-next reviews-right-next"><div class="anim-bg">
+    <svg class="anim-color" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.43 13.0699L18.5 6.99995L12.43 0.929946M1.5 6.99994L18.33 6.99995" stroke="currentColor"
+      stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+</div></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="prof section">
+    <div class="section-bg">
+        <div class="prof__container container">
+            <div class="prof__wrap section-wrap">
+                <div class="prof__content-desktop">
+                    <h2 class="prof__title section-title">
+                        Сэкономьте время на подбор и расчёт — за это возьмётся наша команда.
+                    </h2>
+                    <ul class="prof__list list-reset">
+                        <li class="prof__item">
+                            <img src="./img/prof/sherali.png" alt="Алиев Шерали">
+                        </li>
+                        <li class="prof__item">
+                            <img src="./img/prof/sunnat.png" alt="Халимов Суннат">
+                        </li>
+                        <li class="prof__item">
+                            <img src="./img/prof/bukarev.png" alt="Букарев Олег">
+                        </li>
+                        <li class="prof__item">
+                            <img src="./img/prof/nesterova.png" alt="Нестерова Светлана">
+                        </li>
+                        <li class="prof__item">
+                            <img src="./img/prof/kondratiev.png" alt="Кондратьев Владимир">
+                        </li>
+                    </ul>
+                    <h3 class="prof__title section-title">Professional Flooring Company</h3>
+                </div>
+                <div class="prof__content-mobile">
+                    <div class="swiper prof__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <h3 class="prof__title">Сэкономьте время на подбор и расчёт — за это возьмётся наша команда.</h3>
+                                <img src="./img/prof/sherali.png" alt="Алиев Шерали">
+                                <div class="prof__text">
+                                    <h4 class="prof__subtitle">Алиев Шерали</h4>
+                                    <div class="staj">
+                                        <span class="staj__title">Стаж:</span>
+                                        <span>15 лет</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="prof__title">Сэкономьте время на подбор и расчёт — за это возьмётся наша команда.</h3>
+                                <img src="./img/prof/sunnat.png" alt="Халимов Суннат">
+                                <div class="prof__text">
+                                    <h4 class="prof__subtitle">Халимов Суннат</h4>
+                                    <div class="staj">
+                                        <span class="staj__title">Стаж:</span>
+                                        <span>3 года</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="prof__title">Сэкономьте время на подбор и расчёт — за это возьмётся наша команда.</h3>
+                                <img src="./img/prof/bukarev.png" alt="Букарев Олег">
+                                <div class="prof__text">
+                                    <h4 class="prof__subtitle">Букарев Олег</h4>
+                                    <div class="staj">
+                                        <span class="staj__title">Стаж:</span>
+                                        <span>10 лет</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="prof__title">Сэкономьте время на подбор и расчёт — за это возьмётся наша команда.</h3>
+                                <img src="./img/prof/nesterova.png" alt="Нестерова Светлана">
+                                <div class="prof__text">
+                                    <h4 class="prof__subtitle">Нестерова Светлана</h4>
+                                    <div class="staj">
+                                        <span class="staj__title">Стаж:</span>
+                                        <span>25 лет</span>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="swiper-slide">
+                                <h3 class="prof__title">Сэкономьте время на подбор и расчёт — за это возьмётся наша команда.</h3>
+                                <img src="./img/prof/kondratiev.png" alt="Кондратьев Владимир">
+                                <div class="prof__text">
+                                    <h4 class="prof__subtitle">Кондратьев Владимир</h4>
+                                    <div class="staj">
+                                        <span class="staj__title">Стаж:</span>
+                                        <span>4 года</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"><div class="anim-bg">
+    <svg class="anim-color" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.43 13.0699L18.5 6.99995L12.43 0.929946M1.5 6.99994L18.33 6.99995" stroke="currentColor"
+      stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+</div></div>
+                        <div class="swiper-button-next"><div class="anim-bg">
+    <svg class="anim-color" width="20" height="14" viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12.43 13.0699L18.5 6.99995L12.43 0.929946M1.5 6.99994L18.33 6.99995" stroke="currentColor"
+      stroke-opacity="0.5" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round" />
+  </svg>
+
+</div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    </main>
+    <footer class="footer">
+    <div class="footer__container container">
+        <div class="footer__wrap">
+            <address class="address">
+        <p class="address__title">Контакты</p>
+        <p class="address__title">Тел.: +7 977 999-99-99</p>
+        <p class="address__title">8 800 555-53-23</p>
+        <p class="address__title">Почта: zakaz@poliholl.ru</p>
+        <p class="address__title">Адрес: РФ, г. Москва, Дмитровское шоссе дом 100, стр 2</p>
+      </address>
+            <div class="footer__right">
+                <div class="footer__top">
+                    <p class="footer__text">Следите за нами в соцсетях «Пол и Холл»</p>
+                    <ul class="footer__socials list-reset">
+                        <li class="footer__social__item">
+                            <a href="#" class="footer__social__link link-reset">
+                                <img src="./img/footer/youTube.svg" alt="youTube">
+                            </a>
+                        </li>
+                        <li class="footer__social__item">
+                            <a href="#" class="footer__social__link link-reset">
+                                <img src="./img/footer/twitter.svg" alt="twitter">
+                            </a>
+                        </li>
+                        <li class="footer__social__item">
+                            <a href="#" class="footer__social__link link-reset">
+                                <img src="./img/footer/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="footer__social__item">
+                            <a href="#" class="footer__social__link link-reset">
+                                <img src="./img/footer/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="footer__social__item">
+                            <a href="#" class="footer__social__link link-reset">
+                                <img src="./img/footer/ok.svg" alt="Odnoklassniki">
+                            </a>
+                        </li>
+                        <li class="footer__social__item">
+                            <a href="#" class="footer__social__link link-reset">
+                                <img src="./img/footer/dzen.svg" alt="Dzen">
+                            </a>
+                        </li>
+                        <li class="footer__social__item">
+                            <a href="#" class="footer__social__link link-reset">
+                                <img src="./img/footer/watsap.svg" alt="Watsap">
+                            </a>
+                        </li>
+                        <li class="footer__social__item">
+                            <a href="#" class="footer__social__link link-reset">
+                                <img src="./img/footer/telegram.svg" alt="Telegram">
+                            </a>
+                        </li>
+                        <li class="footer__social__item">
+                            <a href="#" class="footer__social__link link-reset">
+                                <img src="./img/footer/wiber.svg" alt="Wiber">
+                            </a>
+                        </li>
+                        <li class="footer__social__item">
+                            <a href="#" class="footer__social__link link-reset">
+                                <img src="./img/footer/vk.svg" alt="VKontakte">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer__center">
+                    <div class="payment">
+    <ul class="payment__list list-reset">
+        <li class="payment__item">
+            <a href="#" class="payment__link anim-color link-reset">
+                <svg width="37" height="33" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6.1665 25.1924V14.5483M12.3332 25.1924V14.5483M18.4998 25.1924V14.5483M24.6665 25.1924V14.5483M30.8332 25.1924V14.5483M1.5415 31.2747H35.4582M19.0703 1.09123L32.9453 6.56531C33.4848 6.77819 33.9165 7.41684 33.9165 7.97945V13.0278C33.9165 13.8641 33.2228 14.5483 32.3748 14.5483H4.62484C3.77692 14.5483 3.08317 13.8641 3.08317 13.0278V7.97945C3.08317 7.41684 3.51484 6.77819 4.05442 6.56531L17.9294 1.09123C18.2378 0.969588 18.7619 0.969588 19.0703 1.09123ZM33.9165 31.2747H3.08317V26.713C3.08317 25.8766 3.77692 25.1924 4.62484 25.1924H32.3748C33.2228 25.1924 33.9165 25.8766 33.9165 26.713V31.2747Z"
+            stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            d="M18.3125 10.7468C18.6162 10.7468 18.9169 10.6878 19.1975 10.5732C19.478 10.4585 19.7329 10.2905 19.9477 10.0787C20.1624 9.86694 20.3328 9.6155 20.449 9.33877C20.5652 9.06205 20.625 8.76545 20.625 8.46592C20.625 8.1664 20.5652 7.8698 20.449 7.59308C20.3328 7.31635 20.1624 7.06491 19.9477 6.85311C19.7329 6.64131 19.478 6.4733 19.1975 6.35868C18.9169 6.24405 18.6162 6.18506 18.3125 6.18506C17.6992 6.18506 17.111 6.42536 16.6773 6.85311C16.2436 7.28085 16 7.861 16 8.46592C16 9.07085 16.2436 9.651 16.6773 10.0787C17.111 10.5065 17.6992 10.7468 18.3125 10.7468Z"
+            stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+
+                <p class="payment__descr">Перевод на расчётный счёт с НДС 20%</p>
+            </a>
+
+        </li>
+        <li class="payment__item">
+            <a href="#" class="payment__link anim-color link-reset">
+                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.7409 20.4024C25.7309 20.7427 27.9242 20.3876 29.4639 19.3373C31.512 17.9468 31.512 15.6687 29.4639 14.2782C27.9097 13.2279 25.6873 12.8728 23.6973 13.2279M9.25908 20.4024C7.2691 20.7427 5.07576 20.3876 3.53606 19.3373C1.48798 17.9468 1.48798 15.6687 3.53606 14.2782C5.09028 13.2279 7.31267 12.8728 9.30265 13.2279M25.237 9.63317C25.1456 9.61836 25.0525 9.61836 24.9611 9.63317C23.9917 9.59746 23.0739 9.17933 22.4017 8.46713C21.7295 7.75493 21.3555 6.80446 21.3588 5.81658C21.3588 3.70119 23.0292 2 25.1063 2C26.1002 2 27.0534 2.4021 27.7562 3.11785C28.459 3.8336 28.8539 4.80436 28.8539 5.81658C28.8512 6.80516 28.4733 7.7544 27.7992 8.46572C27.1251 9.17705 26.207 9.59537 25.237 9.63317ZM7.76296 9.63317C7.85011 9.61837 7.95179 9.61837 8.03894 9.63317C9.00832 9.59746 9.9261 9.17933 10.5983 8.46713C11.2705 7.75493 11.6445 6.80446 11.6412 5.81658C11.6412 3.70119 9.97082 2 7.89369 2C6.89977 2 5.94657 2.4021 5.24376 3.11785C4.54096 3.8336 4.14613 4.80436 4.14613 5.81658C4.16066 7.8876 5.75845 9.5592 7.76296 9.63317ZM16.5218 20.6835C16.4304 20.6687 16.3372 20.6687 16.2458 20.6835C15.2764 20.6478 14.3587 20.2297 13.6864 19.5175C13.0142 18.8053 12.6402 17.8548 12.6435 16.8669C12.6435 14.7515 14.3139 13.0503 16.3911 13.0503C17.385 13.0503 18.3382 13.4524 19.041 14.1682C19.7438 14.8839 20.1386 15.8547 20.1386 16.8669C20.1241 18.9379 18.5263 20.6243 16.5218 20.6835ZM12.2949 25.3433C10.2468 26.7338 10.2468 29.0119 12.2949 30.4025C14.619 31.9853 18.4246 31.9853 20.7487 30.4025C22.7968 29.0119 22.7968 26.7338 20.7487 25.3433C18.4391 23.7752 14.619 23.7752 12.2949 25.3433Z"
+            stroke="currentColor" stroke-width="2.6875" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+                <p class="payment__descr">Оплата через портал поставщиков</p>
+            </a>
+        </li>
+        <li class="payment__item">
+            <a href="#" class="payment__link anim-color link-reset">
+                <svg width="35" height="26" viewBox="0 0 35 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.8015 12.571C12.8965 7.07518 22.12 7.07518 29.215 12.571M1 6.81032C10.999 -0.936775 24.001 -0.936775 34 6.81032M8.9035 18.6131C14.101 14.574 20.8825 14.574 26.08 18.6131M13.21 24.6717C15.817 22.6521 19.1995 22.6521 21.8065 24.6717"
+            stroke="currentColor" stroke-width="1.92857" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+                <p class="payment__descr">Интернет-банкинг</p>
+            </a>
+        </li>
+        <li class="payment__item">
+            <a href="#" class="payment__link anim-color link-reset">
+                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path
+              d="M15.0857 18.027C15.0857 18.7823 14.8713 19.4772 14.5037 20.0814C13.6001 21.5466 11.747 22.4681 9.60284 22.4681C7.45871 22.4681 5.60557 21.5315 4.70197 20.0814C4.33441 19.4772 4.12 18.7823 4.12 18.027C4.12 16.7279 4.7326 15.5648 5.71278 14.7189C6.70827 13.8578 8.07132 13.3442 9.58753 13.3442C11.1037 13.3442 12.4668 13.8729 13.4623 14.7189C14.4731 15.5497 15.0857 16.7279 15.0857 18.027Z"
+              stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M15.0887 22.1812V25.2476C15.0887 27.8458 12.6382 29.9455 9.62115 29.9455C6.60406 29.9455 4.13831 27.8458 4.13831 25.2476V22.1812C4.13831 24.7793 6.58874 26.6222 9.62115 26.6222C12.6382 26.6222 15.0887 24.7642 15.0887 22.1812Z"
+              stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M15.0887 18.0276V22.1817C15.0887 24.7799 12.6382 26.6228 9.62115 26.6228C6.60406 26.6228 4.13831 24.7648 4.13831 22.1817V18.0276C4.13831 15.4294 6.58874 13.3298 9.62115 13.3298C11.1374 13.3298 12.5004 13.8585 13.4959 14.7044C14.4761 15.5503 15.0887 16.7285 15.0887 18.0276ZM32.3152 13.2844V16.3962C32.3152 17.227 31.6414 17.9068 30.7837 17.937H27.7819C26.1279 17.937 24.6117 16.7436 24.4738 15.1122C24.382 14.1606 24.7495 13.2693 25.3928 12.65C25.9594 12.076 26.7405 11.7437 27.5981 11.7437H30.7837C31.6414 11.7739 32.3152 12.4536 32.3152 13.2844Z"
+              stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M1.68481 12.574V9.55285C1.68481 5.4441 4.19651 2.57402 8.10189 2.09063C8.50008 2.03021 8.91359 2 9.34242 2H23.1261C23.5243 2 23.9072 2.01511 24.2748 2.07553C28.2261 2.5287 30.7837 5.41389 30.7837 9.55285V11.7432H27.5982C26.7405 11.7432 25.9594 12.0755 25.3928 12.6495C24.7495 13.2689 24.382 14.1601 24.4738 15.1118C24.6117 16.7432 26.1279 17.9365 27.7819 17.9365H30.7837V20.1268C30.7837 24.6586 27.7207 27.6797 23.1261 27.6797H19.2973"
+              stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+        </svg>
+                <p class="payment__descr">Оплата наличными</p>
+            </a>
+        </li>
+        <li class="payment__item">
+            <a href="#" class="payment__link anim-color link-reset">
+                <div class="payment__row">
+                    <img src="./img/footer/visa.png" alt="Visa">
+                    <img src="./img/footer/mir.png" alt="mir">
+                    <img src="./img/footer/master-card.png" alt="Master card">
+                </div>
+                <p class="payment__descr">Банковской картой</p>
+            </a>
+        </li>
+    </ul>
+</div>
+                </div>
+            </div>
+            <div class="payment-mobile">
+                <div class="payment">
+    <ul class="payment__list list-reset">
+        <li class="payment__item">
+            <a href="#" class="payment__link anim-color link-reset">
+                <svg width="37" height="33" viewBox="0 0 37 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M6.1665 25.1924V14.5483M12.3332 25.1924V14.5483M18.4998 25.1924V14.5483M24.6665 25.1924V14.5483M30.8332 25.1924V14.5483M1.5415 31.2747H35.4582M19.0703 1.09123L32.9453 6.56531C33.4848 6.77819 33.9165 7.41684 33.9165 7.97945V13.0278C33.9165 13.8641 33.2228 14.5483 32.3748 14.5483H4.62484C3.77692 14.5483 3.08317 13.8641 3.08317 13.0278V7.97945C3.08317 7.41684 3.51484 6.77819 4.05442 6.56531L17.9294 1.09123C18.2378 0.969588 18.7619 0.969588 19.0703 1.09123ZM33.9165 31.2747H3.08317V26.713C3.08317 25.8766 3.77692 25.1924 4.62484 25.1924H32.3748C33.2228 25.1924 33.9165 25.8766 33.9165 26.713V31.2747Z"
+            stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+            stroke-linejoin="round" />
+          <path
+            d="M18.3125 10.7468C18.6162 10.7468 18.9169 10.6878 19.1975 10.5732C19.478 10.4585 19.7329 10.2905 19.9477 10.0787C20.1624 9.86694 20.3328 9.6155 20.449 9.33877C20.5652 9.06205 20.625 8.76545 20.625 8.46592C20.625 8.1664 20.5652 7.8698 20.449 7.59308C20.3328 7.31635 20.1624 7.06491 19.9477 6.85311C19.7329 6.64131 19.478 6.4733 19.1975 6.35868C18.9169 6.24405 18.6162 6.18506 18.3125 6.18506C17.6992 6.18506 17.111 6.42536 16.6773 6.85311C16.2436 7.28085 16 7.861 16 8.46592C16 9.07085 16.2436 9.651 16.6773 10.0787C17.111 10.5065 17.6992 10.7468 18.3125 10.7468Z"
+            stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+
+                <p class="payment__descr">Перевод на расчётный счёт с НДС 20%</p>
+            </a>
+
+        </li>
+        <li class="payment__item">
+            <a href="#" class="payment__link anim-color link-reset">
+                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M23.7409 20.4024C25.7309 20.7427 27.9242 20.3876 29.4639 19.3373C31.512 17.9468 31.512 15.6687 29.4639 14.2782C27.9097 13.2279 25.6873 12.8728 23.6973 13.2279M9.25908 20.4024C7.2691 20.7427 5.07576 20.3876 3.53606 19.3373C1.48798 17.9468 1.48798 15.6687 3.53606 14.2782C5.09028 13.2279 7.31267 12.8728 9.30265 13.2279M25.237 9.63317C25.1456 9.61836 25.0525 9.61836 24.9611 9.63317C23.9917 9.59746 23.0739 9.17933 22.4017 8.46713C21.7295 7.75493 21.3555 6.80446 21.3588 5.81658C21.3588 3.70119 23.0292 2 25.1063 2C26.1002 2 27.0534 2.4021 27.7562 3.11785C28.459 3.8336 28.8539 4.80436 28.8539 5.81658C28.8512 6.80516 28.4733 7.7544 27.7992 8.46572C27.1251 9.17705 26.207 9.59537 25.237 9.63317ZM7.76296 9.63317C7.85011 9.61837 7.95179 9.61837 8.03894 9.63317C9.00832 9.59746 9.9261 9.17933 10.5983 8.46713C11.2705 7.75493 11.6445 6.80446 11.6412 5.81658C11.6412 3.70119 9.97082 2 7.89369 2C6.89977 2 5.94657 2.4021 5.24376 3.11785C4.54096 3.8336 4.14613 4.80436 4.14613 5.81658C4.16066 7.8876 5.75845 9.5592 7.76296 9.63317ZM16.5218 20.6835C16.4304 20.6687 16.3372 20.6687 16.2458 20.6835C15.2764 20.6478 14.3587 20.2297 13.6864 19.5175C13.0142 18.8053 12.6402 17.8548 12.6435 16.8669C12.6435 14.7515 14.3139 13.0503 16.3911 13.0503C17.385 13.0503 18.3382 13.4524 19.041 14.1682C19.7438 14.8839 20.1386 15.8547 20.1386 16.8669C20.1241 18.9379 18.5263 20.6243 16.5218 20.6835ZM12.2949 25.3433C10.2468 26.7338 10.2468 29.0119 12.2949 30.4025C14.619 31.9853 18.4246 31.9853 20.7487 30.4025C22.7968 29.0119 22.7968 26.7338 20.7487 25.3433C18.4391 23.7752 14.619 23.7752 12.2949 25.3433Z"
+            stroke="currentColor" stroke-width="2.6875" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+                <p class="payment__descr">Оплата через портал поставщиков</p>
+            </a>
+        </li>
+        <li class="payment__item">
+            <a href="#" class="payment__link anim-color link-reset">
+                <svg width="35" height="26" viewBox="0 0 35 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M5.8015 12.571C12.8965 7.07518 22.12 7.07518 29.215 12.571M1 6.81032C10.999 -0.936775 24.001 -0.936775 34 6.81032M8.9035 18.6131C14.101 14.574 20.8825 14.574 26.08 18.6131M13.21 24.6717C15.817 22.6521 19.1995 22.6521 21.8065 24.6717"
+            stroke="currentColor" stroke-width="1.92857" stroke-linecap="round" stroke-linejoin="round" />
+        </svg>
+
+                <p class="payment__descr">Интернет-банкинг</p>
+            </a>
+        </li>
+        <li class="payment__item">
+            <a href="#" class="payment__link anim-color link-reset">
+                <svg width="34" height="32" viewBox="0 0 34 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g>
+            <path
+              d="M15.0857 18.027C15.0857 18.7823 14.8713 19.4772 14.5037 20.0814C13.6001 21.5466 11.747 22.4681 9.60284 22.4681C7.45871 22.4681 5.60557 21.5315 4.70197 20.0814C4.33441 19.4772 4.12 18.7823 4.12 18.027C4.12 16.7279 4.7326 15.5648 5.71278 14.7189C6.70827 13.8578 8.07132 13.3442 9.58753 13.3442C11.1037 13.3442 12.4668 13.8729 13.4623 14.7189C14.4731 15.5497 15.0857 16.7279 15.0857 18.027Z"
+              stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M15.0887 22.1812V25.2476C15.0887 27.8458 12.6382 29.9455 9.62115 29.9455C6.60406 29.9455 4.13831 27.8458 4.13831 25.2476V22.1812C4.13831 24.7793 6.58874 26.6222 9.62115 26.6222C12.6382 26.6222 15.0887 24.7642 15.0887 22.1812Z"
+              stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M15.0887 18.0276V22.1817C15.0887 24.7799 12.6382 26.6228 9.62115 26.6228C6.60406 26.6228 4.13831 24.7648 4.13831 22.1817V18.0276C4.13831 15.4294 6.58874 13.3298 9.62115 13.3298C11.1374 13.3298 12.5004 13.8585 13.4959 14.7044C14.4761 15.5503 15.0887 16.7285 15.0887 18.0276ZM32.3152 13.2844V16.3962C32.3152 17.227 31.6414 17.9068 30.7837 17.937H27.7819C26.1279 17.937 24.6117 16.7436 24.4738 15.1122C24.382 14.1606 24.7495 13.2693 25.3928 12.65C25.9594 12.076 26.7405 11.7437 27.5981 11.7437H30.7837C31.6414 11.7739 32.3152 12.4536 32.3152 13.2844Z"
+              stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+              d="M1.68481 12.574V9.55285C1.68481 5.4441 4.19651 2.57402 8.10189 2.09063C8.50008 2.03021 8.91359 2 9.34242 2H23.1261C23.5243 2 23.9072 2.01511 24.2748 2.07553C28.2261 2.5287 30.7837 5.41389 30.7837 9.55285V11.7432H27.5982C26.7405 11.7432 25.9594 12.0755 25.3928 12.6495C24.7495 13.2689 24.382 14.1601 24.4738 15.1118C24.6117 16.7432 26.1279 17.9365 27.7819 17.9365H30.7837V20.1268C30.7837 24.6586 27.7207 27.6797 23.1261 27.6797H19.2973"
+              stroke="currentColor" stroke-width="2.75" stroke-linecap="round" stroke-linejoin="round" />
+          </g>
+        </svg>
+                <p class="payment__descr">Оплата наличными</p>
+            </a>
+        </li>
+        <li class="payment__item">
+            <a href="#" class="payment__link anim-color link-reset">
+                <div class="payment__row">
+                    <img src="./img/footer/visa.png" alt="Visa">
+                    <img src="./img/footer/mir.png" alt="mir">
+                    <img src="./img/footer/master-card.png" alt="Master card">
+                </div>
+                <p class="payment__descr">Банковской картой</p>
+            </a>
+        </li>
+    </ul>
+</div>
+            </div>
+
+        </div>
+    </div>
+    <div class="footer__bottom container">
+        <small class="footer__copy">©Пол и Xолл. 2011–2021</small>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="js/app.min.js"></script>
+</body>
+
+</html>
